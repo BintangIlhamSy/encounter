@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <link rel="icon" href="https://mb.cision.com/Public/19541/0/9350206a992a5996_org.png" />
+</head>
+<body>
+    <div class="ui top attached menu">
+        <div class="item">
+            <img src="https://mb.cision.com/Public/19541/0/9350206a992a5996_org.png">
+        </div>
+        <a class="item" href="/">Home</a>
+        <a class="active item" href="/admin/add-product">Add Product</a>
+        <a class="item" href="/products">Our Products</a>
+        <div class="right item">
+            <i class="id flag"></i>
+            <i class="gb uk flag"></i>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="row">
+            <div class="column">
+                <h2 class="ui header">
+                    <img class="ui image" src="https://image.shutterstock.com/image-vector/red-vector-banner-ribbon-hot-260nw-1176567643.jpg">
+                    <div class="content">
+                      Add product
+                    </div>
+                </h2>
+            </div>
+        </div>
+        <div class="ui section divider"></div>
+        <form class="ui form" action="/admin/add-product" method="POST"> 
+            <div class="field">
+              <label>Product Name</label>
+              <input type="text" name="productname" placeholder="Product name .....">
+            </div>
+            <div class="field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree to the Terms and Conditions</label>
+              </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+          </form>
+    </div>
+</body>
+</html>

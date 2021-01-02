@@ -1,0 +1,12 @@
+.shop-statistic {
+  padding-top: 10vh;
+}
+
+.shop-search {
+  padding-top: 3vh;
+}
+
+.shop-search input[type='text'] {
+  width: 400px;
+  text-align: center;
+}
