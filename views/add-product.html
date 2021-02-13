@@ -26,25 +26,49 @@
                 <h2 class="ui header">
                     <img class="ui image" src="https://image.shutterstock.com/image-vector/red-vector-banner-ribbon-hot-260nw-1176567643.jpg">
                     <div class="content">
-                      Add product
+                      Register Products
                     </div>
                 </h2>
             </div>
         </div>
-        <div class="ui section divider"></div>
+        <br/>
+        <br/>
         <form class="ui form" action="/admin/add-product" method="POST"> 
-            <div class="field">
-              <label>Product Name</label>
-              <input type="text" name="productname" placeholder="Product name .....">
-            </div>
-            <div class="field">
-              <div class="ui checkbox">
-                <input type="checkbox" tabindex="0" class="hidden">
-                <label>I agree to the Terms and Conditions</label>
-              </div>
-            </div>
-            <button class="ui button" type="submit">Submit</button>
-          </form>
+          <h4 class="ui dividing header">Product Information</h4>
+          <div class="eight wide field">
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Insert product title ....">
+          </div>
+          <div class="eight wide field">
+            <label>Description</label>
+            <textarea name="description" placeholder="Insert description of product ..."></textarea>
+          </div>
+          <div class="field">
+            <label>Link Image</label>
+            <input type="text" name="image" placeholder="Insert product image ....">
+          </div>
+          <div class="six wide field">
+            <label>Price</label>
+            <input type="number" name="price" placeholder="Rp. 0.0;">
+          </div>
+          <div class="six wide field">
+            <label>Old Price</label>
+            <input type="number" name="oldprice" placeholder="Rp. 0.0;">
+          </div>
+          <div class="six wide field">
+            <label>Discount</label>
+            <input type="number" name="discount" placeholder="x.x %">
+          </div>
+          <div class="six wide field">
+            <label>Availability</label>
+            <input type="text" name="available">
+          </div>
+          <div class="ui buttons">
+            <button class="ui positive button" type="submit">Save</button>
+            <div class="or"></div>
+            <button class="ui button" type="reset">Cancel</button>
+          </div>
+        </form>
     </div>
 </body>
 </html>
